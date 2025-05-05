@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <title>Siddhi-Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====== Navbar ====== -->
+  <nav class="navbar">
+    <div class="logo">Siddhi's Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <!-- <li><a href="#projects">Projects</a></li> -->
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
+
+  <!-- ====== Hero Section ====== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-content">
+      <img src="My_Photo.jpg" alt="Siddhi's Photo" class="profile-photo" />
+      <h1 class="typing">Hi, I'm <span class="highlight" id="typing">Siddhi</span></h1>
+      <p>Let's connect our self with tech 😉</p>
+      <div class="hero-buttons">
+        <a href="resume.pdf" class="btn" download>Download Resume</a>
+        <!-- <a href="#projects" class="btn outline">View Projects</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== About Me Section ====== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm an 18-year-old web developer with a passion for creating beautiful and functional websites. 
+      With a strong academic foundation and a keen eye for design, I enjoy turning ideas into interactive digital experiences. 
+      I'm constantly learning new technologies, exploring design trends, and sharpening my skills to stay ahead in the ever-evolving world of web development. 
+      Whether it's front-end magic or back-end logic, I aim to build websites that are not just visually appealing but also fast, responsive, and user-friendly.</p>
+  </section>
+
+  <!-- ====== Skills Section ====== -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"/>
+        <span>HTML</span>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"/>
+        <span>CSS</span>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"/>
+        <span>JavaScript</span>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
+        <span>Python</span>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/>
+        <span>Java</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Contact Section ====== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via the form below or through my social links!</p>
+    <div class="contact-container">
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+        <div id="form-status" class="form-status"></div>
+      </form>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> siddhipandhare1712@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 84462 50633</p>
+        <p><i class="fas fa-map-marker-alt"></i> A/P Jamb, Baramati, Maharashtra</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    <head>
+      <!-- Add this inside the <head> tag -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/siddhi-pandhare-96652b34b/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Siddhi-Pandhare3117" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/918446250633" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 Siddhi. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+  <!-- Add this before closing </head> tag -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function() {
+        emailjs.init("T1S7TvGNResbP2sGG"); // Add your EmailJS public key here
+     })();
+  </script>
+
+  <!-- Add this before closing </head> tag -->
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://accounts.google.com/gsi/client"></script>
+</body>
+</html>
